@@ -1,7 +1,11 @@
 <template>
   <div
-  class="min-h-[74px] min-w-[74px] border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center"
-  :class="{ ['hover-effect']: !disableHoverEffect, ['icon-sized-container']: customSize, ['big-size']: bigSize}"
+    class="min-h-[74px] min-w-[74px] border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center"
+    :class="{
+      ['hover-effect']: !disableHoverEffect,
+      ['icon-sized-container']: customSize,
+      ['big-size']: bigSize
+    }"
   >
     <slot></slot>
   </div>
@@ -12,7 +16,7 @@ import { computed } from 'vue'
 const props = defineProps({
   size: {
     type: Number,
-    required: false,
+    required: false
   },
   bigSize: {
     type: Boolean,
@@ -24,7 +28,7 @@ const props = defineProps({
   }
 })
 const customSize = computed(() => props.size && props.size > 0)
-const iconSize = computed(() => props.size ? `${props.size - props.size * 0.45}px`: '40px')
+const iconSize = computed(() => (props.size ? `${props.size - props.size * 0.45}px` : '40px'))
 const containerSize = computed(() => `${props.size}px`)
 </script>
 
@@ -34,10 +38,10 @@ const containerSize = computed(() => `${props.size}px`)
 }
 
 :deep(path) {
-    &:not(.fill-exluded) {
-      @apply fill-black-950;
-    }
+  &:not(.fill-exluded) {
+    @apply fill-black-950;
   }
+}
 
 .big-size {
   @apply min-h-[90px] min-w-[90px];

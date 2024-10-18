@@ -35,13 +35,13 @@ const props = defineProps({
   name: {
     type: String as PropType<IconName>,
     required: true,
-    validator(value: any) {
-      return iconNames.includes(value)
+    validator(value: unknown) {
+      return iconNames.includes(value as IconName)
     }
   },
   color: {
     type: String
-  },
+  }
 })
 
 const internalColor = computed(() => {

@@ -6,7 +6,7 @@
   </div>
   <span class="sr-only">Loading...</span>
 </template>
-<script setup>
+<script setup lang="ts">
 defineProps({
   height: {
     type: String,

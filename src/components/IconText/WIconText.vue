@@ -12,7 +12,12 @@
 
     <slot v-else></slot>
 
-    <p class="text-link" :class="{ 'font-bold': bold, 'text-black-950': !dark,  'text-white-50': dark }">{{ text }}</p>
+    <p
+      class="text-link"
+      :class="{ 'font-bold': bold, 'text-black-950': !dark, 'text-white-50': dark }"
+    >
+      {{ text }}
+    </p>
   </a>
 </template>
 
@@ -32,7 +37,7 @@ const props = defineProps({
   },
   iconSize: {
     type: Number,
-    required: false,
+    required: false
   },
   link: {
     type: String,
@@ -41,8 +46,8 @@ const props = defineProps({
   position: {
     type: String as PropType<IconTextPosition>,
     required: true,
-    validator(value: any) {
-      return iconTextPositions.includes(value)
+    validator(value: unknown) {
+      return iconTextPositions.includes(value as IconTextPosition)
     }
   },
   bold: {

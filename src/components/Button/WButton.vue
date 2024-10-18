@@ -19,8 +19,8 @@ const props = defineProps({
   type: {
     type: String,
     default: 'primary',
-    validator(value: any) {
-      return buttonTypes.includes(value)
+    validator(value: unknown) {
+      return buttonTypes.includes(value as ButtonType)
     }
   }
 })

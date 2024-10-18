@@ -36,9 +36,9 @@ import { SOCIAL_URLS } from './WSocialsBar'
 
 <style lang="scss" scoped>
 .link {
-  @apply justify-self-end
+  @apply justify-self-end;
 }
 .icon {
-  @apply w-[18px] h-auto
+  @apply w-[18px] h-auto;
 }
 </style>

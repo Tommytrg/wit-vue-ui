@@ -1,5 +1,7 @@
 <template>
-  <div class="card border-2 bg-white-50 border-black-950 rounded-lg px-lg py-lg mr-sm mb-sm w-full h-full">
+  <div
+    class="card border-2 bg-white-50 border-black-950 rounded-lg px-lg py-lg mr-sm mb-sm w-full h-full"
+  >
     <div v-if="link" class="flex justify-between items-center">
       <h3 class="text-xl text-black-950 font-semibold leading-4">
         {{ title }}
