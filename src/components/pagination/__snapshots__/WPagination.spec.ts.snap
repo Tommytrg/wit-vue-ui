@@ -3,10 +3,10 @@
 exports[`WPagination > renders properly with divider 1`] = `
 <nav
   aria-label="Pagination"
-  class="flex items-center gap-xs"
+  class="flex items-center gap-xs w-max"
 >
   <button
-    aria-label="Previous"
+    aria-label="Prev"
     class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 dark:hover:text-white-50 focus:outline-none"
     type="button"
   >
@@ -30,7 +30,7 @@ exports[`WPagination > renders properly with divider 1`] = `
     <span
       class="text-black-950 dark:text-white-50"
     >
-      Previous
+      Prev
     </span>
   </button>
   <div
@@ -86,10 +86,10 @@ exports[`WPagination > renders properly with divider 1`] = `
 exports[`WPagination > renders properly without divider 1`] = `
 <nav
   aria-label="Pagination"
-  class="flex items-center gap-xs"
+  class="flex items-center gap-xs w-max"
 >
   <button
-    aria-label="Previous"
+    aria-label="Prev"
     class="opacity-50 pointer-events-none min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 dark:hover:text-white-50 focus:outline-none"
     disabled=""
     type="button"
@@ -114,7 +114,7 @@ exports[`WPagination > renders properly without divider 1`] = `
     <span
       class="text-black-950 dark:text-white-50"
     >
-      Previous
+      Prev
     </span>
   </button>
   <div

@@ -35,7 +35,7 @@ describe('WPagination', () => {
 
     const buttons = wrapper.findAll('button')
 
-    expect(buttons[0].element.textContent).toBe('Previous')
+    expect(buttons[0].element.textContent).toBe('Prev')
 
     await buttons[0].trigger('click')
 

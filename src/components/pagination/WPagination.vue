@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center gap-xs" aria-label="Pagination">
+  <nav class="flex items-center gap-xs w-max" aria-label="Pagination">
     <button
       type="button"
       :disabled="!canGoFirstOrPrev"
@@ -9,7 +9,7 @@
         'pointer-events-none': currentPage === 1
       }"
       class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 dark:hover:text-white-50 focus:outline-none"
-      aria-label="Previous"
+      aria-label="Prev"
     >
       <svg
         class="shrink-0 size-3.5"
@@ -25,7 +25,7 @@
       >
         <path d="m15 18-6-6 6-6" class="stroke-black-950 dark:stroke-white-50"></path>
       </svg>
-      <span class="text-black-950 dark:text-white-50">Previous</span>
+      <span class="text-black-950 dark:text-white-50">Prev</span>
     </button>
     <div class="flex items-center gap-x-xs">
       <button
