@@ -6,6 +6,7 @@ export enum IconName {
   Bitmart = 'bitmart',
   Changelly = 'changelly',
   closeNav = 'close-nav',
+  Dextools = 'dextools',
   Discord = 'discord',
   Docker = 'docker',
   EmptyState = 'empty-state',
@@ -17,11 +18,14 @@ export enum IconName {
   Mexc = 'mexc',
   MyWitWallet = 'my-wit-wallet',
   NavitagionCursor = 'navitagion-cursor',
+  Oneinch = 'oneinch',
+  Pancakeswap = 'pancakeswap',
   Raspberry = 'raspberry',
   RightArrow = 'right-arrow',
   Sheikah = 'sheikah',
   Simpleswap = 'simpleswap',
   Telegram = 'telegram',
+  Uniswap = 'uniswap',
   Windows = 'windows',
   X = 'x'
 }

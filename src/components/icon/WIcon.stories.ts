@@ -15,6 +15,7 @@ const meta: Meta<typeof WIcon> = {
         IconName.Bitmart,
         IconName.Changelly,
         IconName.closeNav,
+        IconName.Dextools,
         IconName.Discord,
         IconName.Docker,
         IconName.EmptyState,
@@ -26,11 +27,14 @@ const meta: Meta<typeof WIcon> = {
         IconName.Mexc,
         IconName.MyWitWallet,
         IconName.NavitagionCursor,
+        IconName.Oneinch,
+        IconName.Pancakeswap,
         IconName.Raspberry,
         IconName.RightArrow,
         IconName.Sheikah,
         IconName.Simpleswap,
         IconName.Telegram,
+        IconName.Uniswap,
         IconName.Windows,
         IconName.X
       ]
